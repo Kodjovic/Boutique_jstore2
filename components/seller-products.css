@@ -1,0 +1,27 @@
+.best-seller{
+    
+    width: 300px;
+    height: 100px;
+    padding: 5px 5px;
+}
+.best-seller .product-image img{
+    width: 100px;
+    height: 97%;
+    margin-top: ;
+    
+}
+.best-seller .product-title{
+    font-size: 1rem;
+    padding-bottom: 12px;
+}
+.products-item .big-title{
+    /* text-align: center; */
+}
+
+.reviews i{
+    color: var(--main-color-orange);
+    padding-bottom: 12px;
+}
+.reviews i:nth-child(4){
+    color: var(--main-color-gray);
+}

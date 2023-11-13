@@ -1,0 +1,51 @@
+#sign .container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sign .container form {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 600px;
+  width: 85%;
+}
+#sign .container form h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#sign .container form input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 35px;
+  font-size: 1.2rem;
+  flex: 1;
+  outline: none;
+}
+#sign .container form .form-inline {
+  height: 35px;
+  margin-bottom: 5px;
+  display: flex;
+}
+#sign .container form .form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sign .container form .submit {
+  flex: 1;
+  background-color: var(--main-color-teal);
+  color: var(--main-color-white);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#sign .container form p a {
+  color: var(--main-color-teal);
+}
+#sign .container form p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.form-error {
+  color: var(--main-color-danger);
+}

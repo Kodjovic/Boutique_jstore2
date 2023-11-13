@@ -1,0 +1,41 @@
+.news{
+    flex-wrap: wrap;
+}
+.new-item{
+    width: 300px;
+    cursor: pointer;
+}
+
+.new-item h2{
+    font-size: 1.2rem;
+}
+.new-item .new-content{
+    color: var(--main-color-gray);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    /* Pour justifier le text. Merci */
+    text-align: justify;
+}
+.new-details{
+   padding: 5px; 
+}
+.new-item{
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.2);;
+}
+
+@media screen and (max-width: 1200px) {
+   
+}
+@media screen and (max-width: 992px) {
+  
+}
+@media screen and (max-width: 768px) {
+    .news{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    
+@media screen and (max-width: 427px) {
+    
+}

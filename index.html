@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Jstore - e-commerce template</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner-promo-container tc">
+        <div class="container">
+          <div class="banner-promo py-15">
+            Get Up to 40% New Season Style <span class="men">Men</span>
+            <span class="women">Women</span>
+            * Limited time only
+          </div>
+        </div>
+      </div>
+      <div class="nav-top-container">
+        <div class="container">
+          <div class="nav-top flex jcsb gap-10 py-10">
+            <div class="nav-message">
+              FREE RETURN. STANDARD SHIPPING ORDER *99+
+            </div>
+            <div class="nav-items">
+              <ul class="flex jcc gap-20">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Log In</a></li>
+              </ul>
+            </div>
+            <div class="flex gap-10">
+              <div class="nav-country">
+                <select name="country" id="country">
+                  <option value="france">FRA</option>
+                  <option value="usa">USA</option>
+                  <option value="rus">RUS</option>
+                </select>
+              </div>
+              <div class="nav-currency">
+                <select name="currency" id="currency">
+                  <option value="EUR">EUR</option>
+                  <option value="USD">USD</option>
+                  <option value="OXF">OXF</option>
+                </select>
+              </div>
+            </div>
+            <div class="nav-social-icon flex gap-20">
+              <div class="social-icon-item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="social-icon-item">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="social-icon-item">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="website-details-container box">
+        <div class="container">
+          <div class="website-details aic flex gap-10">
+            <i
+              class="fa-solid fa-bars none"
+              id="toggleMobileNav"
+              data-mobile="mobile-nav"
+            ></i>
+            <div class="website-logo logo">
+              <h2><a href="#">Jstore</a></h2>
+            </div>
+            <div class="website-search-bar flex-1 flex">
+              <input
+                type="search"
+                name="product-filter"
+                placeholder="Search"
+                class="flex-1 px-10"
+                id="product-filter/"
+              />
+              <select name="categories" id="categories">
+                <option value="">All Categories</option>
+                <option value="">Robes</option>
+                <option value="">Jupes</option>
+                <option value="">Cullotes</option>
+                <option value="">T-Shirt</option>
+                <option value="">Chemise</option>
+              </select>
+              <div class="search-icon flex aic jcc">
+                <i class="bi bi-search"></i>
+              </div>
+            </div>
+            <div class="website-call-us flex aic gap-10">
+              <div class="call-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="call-message">
+                <h3>Call Us</h3>
+                <a href="tel:+123456789">+123456789</a>
+              </div>
+            </div>
+            <div class="website-call-icon flex gap-10">
+              <div class="website-icon-item">
+                <i class="bi bi-person"></i>
+              </div>
+              <div class="website-icon-item">
+                <i class="bi bi-bag-heart"></i>
+              </div>
+              <div class="website-icon-item">
+                <i class="bi bi-cart"></i>
+              </div>
+              <div class="website-icon-item">
+                <i
+                  class="fa-solid fa-angle-left"
+                  id="openCart"
+                  data-mobile="mobile-cart"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="overlay none"></div>
+    <nav class="container">
+      <div class="nav-container flex jcsb">
+        <div class="nav-left">
+          <ul class="flex gap-10">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="relative">
+              <a href="#"
+                >Categoires <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="mega-sub-nav absolute flex box">
+                <div class="mega-item">
+                  <h3>Variation</h3>
+                  <ul>
+                    <li><a href="#">List Type</a></li>
+                    <li><a href="#">Boxed Slider Banner</a></li>
+                    <li><a href="#">Boxed Image Banner</a></li>
+                    <li><a href="#">Left Siderbar</a></li>
+                    <li><a href="#">Right Sidebar</a></li>
+                    <li><a href="#">Off Canvas Filter</a></li>
+                    <li><a href="#">Horizontal Filter1</a></li>
+                    <li><a href="#">Horizontal Filter2</a></li>
+                  </ul>
+                </div>
+                <div class="mega-item">
+                  <h3>Variation</h3>
+                  <ul>
+                    <li><a href="#">List Type</a></li>
+                    <li><a href="#">Boxed Slider Banner</a></li>
+                    <li><a href="#">Boxed Image Banner</a></li>
+                    <li><a href="#">Left Siderbar</a></li>
+                    <li><a href="#">Right Sidebar</a></li>
+                    <li><a href="#">Off Canvas Filter</a></li>
+                    <li><a href="#">Horizontal Filter1</a></li>
+                    <li><a href="#">Horizontal Filter2</a></li>
+                  </ul>
+                </div>
+                <div class="mega-item relative">
+                  <img src="/assets/images/banner/menu-banner-2.png" alt="" />
+                  <div class="mega-item-content absolute">
+                    <span>OFF</span>
+                    <div>
+                      <h4>UP TO</h4>
+                      <h3>50%</h3>
+                    </div>
+                  </div>
+                  <button class="btn absolute">SHOP NOW</button>
+                </div>
+              </div>
+            </li>
+            <li class="relative">
+              <a href="#">Product <i class="fa-solid fa-chevron-down"></i></a>
+              <div class="mega-sub-nav absolute flex box">
+                <div class="mega-item">
+                  <h3>Variation</h3>
+                  <ul>
+                    <li><a href="#">List Type</a></li>
+                    <li><a href="#">Boxed Slider Banner</a></li>
+                    <li><a href="#">Boxed Image Banner</a></li>
+                    <li><a href="#">Left Siderbar</a></li>
+                    <li><a href="#">Right Sidebar</a></li>
+                    <li><a href="#">Off Canvas Filter</a></li>
+                    <li><a href="#">Horizontal Filter1</a></li>
+                    <li><a href="#">Horizontal Filter2</a></li>
+                  </ul>
+                </div>
+                <div class="mega-item">
+                  <h3>Variation</h3>
+                  <ul>
+                    <li><a href="#">List Type</a></li>
+                    <li><a href="#">Boxed Slider Banner</a></li>
+                    <li><a href="#">Boxed Image Banner</a></li>
+                    <li><a href="#">Left Siderbar</a></li>
+                    <li><a href="#">Right Sidebar</a></li>
+                    <li><a href="#">Off Canvas Filter</a></li>
+                    <li><a href="#">Horizontal Filter1</a></li>
+                    <li><a href="#">Horizontal Filter2</a></li>
+                  </ul>
+                </div>
+                <div class="mega-item relative">
+                  <img src="/assets/images/banner/menu-banner-1.png" alt="" />
+                  <div class="mega-item-content absolute">
+                    <span>OFF</span>
+                    <div>
+                      <h4>UP TO</h4>
+                      <h3>50%</h3>
+                    </div>
+                  </div>
+                  <button class="btn absolute">SHOP NOW</button>
+                </div>
+              </div>
+            </li>
+            <li class="relative">
+              <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="sub-nav absolute box none">
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="relative">
+                  <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="sub-nav absolute box none">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Forgot Password</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Element</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul class="flex gap-10">
+            <li><a href="#">Special offer</a></li>
+            <li><a href="#">CBuy PORTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile mobile-nav mobile-left none">
+      <div class="overlay"></div>
+      <div class="mobile-content fixed">
+        <div class="mobile-content-header relative">
+          <div class="mobile-title">
+            <h2>Jstore</h2>
+          </div>
+          <div class="mobile-close absolute" data-mobile="mobile-nav">
+            <img
+              src="/assets/images/icons/close.png"
+              data-mobile="mobile-nav"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="mobile-content-body">
+          <ul>
+            <li class="mobile-nav-item"><a href="#">Home</a></li>
+            <li class="mobile-nav-item"><a href="#">Categories</a></li>
+            <li class="mobile-nav-item active"><a href="#">Products</a></li>
+            <li class="mobile-nav-item"><a href="#">Pages</a></li>
+            <li class="mobile-nav-item"><a href="#">Blog</a></li>
+            <li class="mobile-nav-item"><a href="#">Elements</a></li>
+            <li class="mobile-nav-item"><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="mobile-content-footer"></div>
+      </div>
+    </div>
+    <div class="mobile mobile-cart mobile-right none">
+      <div class="overlay"></div>
+      <div class="mobile-content fixed">
+        <div class="mobile-content-header relative">
+          <div class="mobile-title">
+            <h2>Shopping Cart</h2>
+          </div>
+          <div class="mobile-close absolute" data-mobile="mobile-cart">
+            <img
+              src="/assets/images/icons/close.png"
+              data-mobile="mobile-cart"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="cart">
+          <div class="mobile-content-body py-10 px-10">
+            <ul class="cart-product-items">
+              <li class="cart-product-item flex">
+                <div class="product-details flex-1 flex column jcc">
+                  <div class="product-name">
+                    Pantalon supreme pour femme d'afaires
+                  </div>
+                  <div class="product-quantity-and-price">2 x 99.99€</div>
+                </div>
+                <div class="product-image relative">
+                  <img src="/assets/images/product/featured/1.webp" alt="" />
+                  <div class="remove-product">
+                    <img
+                      src="/assets/images/icons/close.png"
+                      alt=""
+                      class="absolute"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="cart-product-item flex">
+                <div class="product-details flex-1 flex column jcc">
+                  <div class="product-name">
+                    Pantalon supreme pour femme d'afaires
+                  </div>
+                  <div class="product-quantity-and-price">2 x 99.99€</div>
+                </div>
+                <div class="product-image relative">
+                  <img src="/assets/images/product/featured/2.webp" alt="" />
+                  <div class="remove-product">
+                    <img
+                      src="/assets/images/icons/close.png"
+                      alt=""
+                      class="absolute"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="cart-product-item flex">
+                <div class="product-details flex-1 flex column jcc">
+                  <div class="product-name">
+                    Pantalon supreme pour femme d'afaires
+                  </div>
+                  <div class="product-quantity-and-price">2 x 99.99€</div>
+                </div>
+                <div class="product-image relative">
+                  <img src="/assets/images/product/featured/3.webp" alt="" />
+                  <div class="remove-product">
+                    <img
+                      src="/assets/images/icons/close.png"
+                      alt=""
+                      class="absolute"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="cart-product-item flex">
+                <div class="product-details flex-1 flex column jcc">
+                  <div class="product-name">
+                    Pantalon supreme pour femme d'afaires
+                  </div>
+                  <div class="product-quantity-and-price">2 x 99.99€</div>
+                </div>
+                <div class="product-image relative">
+                  <img src="/assets/images/product/featured/4.webp" alt="" />
+                  <div class="remove-product">
+                    <img
+                      src="/assets/images/icons/close.png"
+                      alt=""
+                      class="absolute"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-content-footer">
+            <button class="view-cart btn">View Cart</button>
+            <button class="Checkout btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="slider relative">
+      <div class="slider-image"></div>
+      <div class="slider-content absolute">
+        <h4>Find the Boundaries. Push Through!</h4>
+        <h2>Summer Sale</h2>
+        <h3>70% OFF</h3>
+        <div class="slider-actions flex gap-25">
+          <span>STARTINT AT</span>
+          <div class="price">$<span>199.</span> <sup>99</sup></div>
+          <div class="shop-now btn">Shop Now</div>
+        </div>
+      </div>
+      <div class="slider-icon prev absolute">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="slider-icon next absolute">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
+    <section class="promo py-15">
+      <div class="container">
+        <div class="promo-container py-20 flex gap-10">
+          <div class="promo-item flex-1">
+            <div class="promo-header flex aic jcc gap-10">
+              <div class="promo-icon tc">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div class="promo-details tc">
+                <h3>FREE SHIPPING & RETURN</h3>
+                <p>Free shipping on all orders over $99</p>
+              </div>
+            </div>
+            <div class="promo-image">
+              <img src="/assets/images/banner/banner-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="promo-item flex-1">
+            <div class="promo-header flex aic jcc gap-10">
+              <div class="promo-icon tc">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div class="promo-details tc">
+                <h3>FREE SHIPPING & RETURN</h3>
+                <p>Free shipping on all orders over $99</p>
+              </div>
+            </div>
+            <div class="promo-image">
+              <img src="/assets/images/banner/banner-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="promo-item flex-1">
+            <div class="promo-header flex aic jcc gap-10">
+              <div class="promo-icon tc">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div class="promo-details tc">
+                <h3>FREE SHIPPING & RETURN</h3>
+                <p>Free shipping on all orders over $99</p>
+              </div>
+            </div>
+            <div class="promo-image">
+              <img src="/assets/images/banner/banner-1.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products-container py-30 bg-gray">
+      <div class="container">
+        <div class="featured-products">
+          <div class="section-title">
+            <h2>Featured Products</h2>
+          </div>
+          <div class="products-list flex jcsb">
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/featured/2.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/featured/3.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/featured/4.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newarrivals-products-container py-30">
+      <div class="container">
+        <div class="new-arrivals-products">
+          <div class="section-title">
+            <h2>new arrivals</h2>
+          </div>
+          <div class="products-list flex jcsb">
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/new-arrivals/1.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/new-arrivals/2.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/new-arrivals/3.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-item box">
+              <div class="product-image relative">
+                <img src="/assets/images/product/new-arrivals/4.webp" alt="" />
+                <span class="badge hot absolute">hot</span>
+                <span class="badge sold absolute">-20%</span>
+              </div>
+              <div class="product-details">
+                <div class="product-category">Pantalons</div>
+                <div class="product-name">
+                  <h3>Pantalon supreme</h3>
+                </div>
+                <div class="product-reviews py-5">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>(758)
+                </div>
+                <div class="product-price flex jcc gap-10">
+                  <del>
+                    <h4>$89.99</h4>
+                  </del>
+                  <h4>29.99</h4>
+                </div>
+                <div class="product-options">
+                  <button class="btn">Select Option</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="banner-big-sale my-50">
+      <div class="container flex jcsb aic py-15 px-15">
+        <div class="banner-big-sale-btn btn">Big Sale</div>
+        <div class="banner-big-sale-content btn">
+          ALL NEW FASHION BRANDS ITEMS UP TO 70% OFF
+        </div>
+        <div class="banner-big-sale-action btn">View sale</div>
+      </div>
+    </div>
+    <div class="browse-our-categories-container">
+      <div class="container">
+        <div class="browse-our-categories">
+          <div class="section-title">
+            <h2>Browse our categories</h2>
+          </div>
+          <div class="categories-list flex jcsb gap-10">
+            <div class="category-item">
+              <div class="category-image">
+                <img src="/assets/images/product/categories/2.png" alt="" />
+              </div>
+              <div class="category-details">
+                <div class="category-name">Robes</div>
+                <div class="product-stock">20 In stock</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-image">
+                <img src="/assets/images/product/categories/3.png" alt="" />
+              </div>
+              <div class="category-details">
+                <div class="category-name">PULLS</div>
+                <div class="product-stock">20 In stock</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-image">
+                <img src="/assets/images/product/categories/4.png" alt="" />
+              </div>
+              <div class="category-details">
+                <div class="category-name">Pantalons</div>
+                <div class="product-stock">20 In stock</div>
+              </div>
+            </div>
+            <div class="category-item">
+              <div class="category-image">
+                <img src="/assets/images/product/categories/5.png" alt="" />
+              </div>
+              <div class="category-details">
+                <div class="category-name">SHORTS</div>
+                <div class="product-stock">5 In stock</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="pub-banner-container py-30 bg-gray">
+      <div class="container">
+        <div class="pub-banner flex jcsb">
+          <div class="pub-item">
+            <div class="pub-item-icon">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <div class="pub-item-title">CUSTOMER SUPPORT</div>
+            <div class="pub-item-subtitle pb-5">You won't Be alone</div>
+            <div class="pub-item-details pb-5">
+              We really care about you and your website as much as you go.
+              Purchasing Porto or any other them from us get 100% free support.
+            </div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-item-icon">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <div class="pub-item-title">CUSTOMER SUPPORT</div>
+            <div class="pub-item-subtitle pb-5">You won't Be alone</div>
+            <div class="pub-item-details pb-5">
+              We really care about you and your website as much as you go.
+              Purchasing Porto or any other them from us get 100% free support.
+            </div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-item-icon">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <div class="pub-item-title">CUSTOMER SUPPORT</div>
+            <div class="pub-item-subtitle pb-5">You won't Be alone</div>
+            <div class="pub-item-details pb-5">
+              We really care about you and your website as much as you go.
+              Purchasing Porto or any other them from us get 100% free support.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner-divider"></section>
+    <section class="latest-new-container py-30">
+      <div class="container">
+        <div class="latest-new">
+          <div class="section-title">
+            <h2>LATEST NEW</h2>
+          </div>
+          <div class="news flex gap-10 jcsb">
+            <div class="new-item">
+              <div class="new-image">
+                <img src="/assets/images/product/latest-new/1.png" alt="" />
+              </div>
+              <div class="new-details">
+                <div class="new-title">
+                  <h2>Top New Collection</h2>
+                </div>
+                <div class="new-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequuntur qui, nisi enim
+                </div>
+                <div class="new-comments">10 comments</div>
+              </div>
+            </div>
+            <div class="new-item">
+              <div class="new-image">
+                <img src="/assets/images/product/latest-new/1.png" alt="" />
+              </div>
+              <div class="new-details">
+                <div class="new-title">
+                  <h2>Top New Collection</h2>
+                </div>
+                <div class="new-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequuntur qui, nisi enim
+                </div>
+                <div class="new-comments">10 comments</div>
+              </div>
+            </div>
+            <div class="new-item">
+              <div class="new-image">
+                <img src="/assets/images/product/latest-new/1.png" alt="" />
+              </div>
+              <div class="new-details">
+                <div class="new-title">
+                  <h2>Top New Collection</h2>
+                </div>
+                <div class="new-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequuntur qui, nisi enim
+                </div>
+                <div class="new-comments">10 comments</div>
+              </div>
+            </div>
+            <div class="new-item">
+              <div class="new-image">
+                <img src="/assets/images/product/latest-new/1.png" alt="" />
+              </div>
+              <div class="new-details">
+                <div class="new-title">
+                  <h2>Top New Collection</h2>
+                </div>
+                <div class="new-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequuntur qui, nisi enim
+                </div>
+                <div class="new-comments">10 comments</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="patenaires-container">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="paternaires flex jcsb wrap">
+          <div class="partenaires-logo">
+            <img src="/assets/images/brand/1.svg" alt="" />
+          </div>
+          <div class="partenaires-logo">
+            <img src="/assets/images/brand/2.svg" alt="" />
+          </div>
+          <div class="partenaires-logo">
+            <img src="/assets/images/brand/3.svg" alt="" />
+          </div>
+          <div class="partenaires-logo">
+            <img src="/assets/images/brand/4.svg" alt="" />
+          </div>
+          <div class="partenaires-logo">
+            <img src="/assets/images/brand/5.svg" alt="" />
+          </div>
+          <div class="partenaires-logo">
+            <img src="/assets/images/brand/6.svg" alt="" />
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </section>
+    <!-- <section class="best-seller-container">
+        <div class="container">
+            <div class="products-item">
+                <div class="big-title">
+                    <h3>Featured Products</h3>
+                </div>
+                <div class="best-seller flex gap-25 b">
+                    <div class="product-image">
+                        <img src="/assets/images/product/best-seller/1.webp" alt="">
+                    </div>
+                    <div class="best-seller-details">
+                        <div class="seller-details">
+                            <div class="product-title">Pantalon de qualité</div>
+                        </div>
+                        <div class="price-review flex gap-10">
+                            <div class="reviews">
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                            </div>
+                            <div class="comments">(459)</div>   
+                        </div>
+                        <div class="best-price flex gap-10 jcc">
+                            <del>
+                                $159.90
+                            </del>
+                            <h4>$69.99</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="best-seller flex gap-25 b">
+                    <div class="product-image">
+                        <img src="/assets/images/product/best-seller/1.webp" alt="">
+                    </div>
+                    <div class="best-seller-details">
+                        <div class="seller-details">
+                            <div class="product-title">Pantalon de qualité</div>
+                        </div>
+                        <div class="price-review flex gap-10">
+                            <div class="reviews">
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                            </div>
+                            <div class="comments">(459)</div>   
+                        </div>
+                        <div class="best-price flex gap-10 jcc">
+                            <del>
+                                $159.90
+                            </del>
+                            <h4>$69.99</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="best-seller flex gap-25 b">
+                    <div class="product-image">
+                        <img src="/assets/images/product/best-seller/1.webp" alt="">
+                    </div>
+                    <div class="best-seller-details">
+                        <div class="seller-details">
+                            <div class="product-title">Pantalon de qualité</div>
+                        </div>
+                        <div class="price-review flex gap-10">
+                            <div class="reviews">
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                            </div>
+                            <div class="comments">(459)</div>   
+                        </div>
+                        <div class="best-price flex gap-10 jcc">
+                            <del>
+                                $159.90
+                            </del>
+                            <h4>$69.99</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="best-seller flex gap-25 b">
+                    <div class="product-image">
+                        <img src="/assets/images/product/best-seller/1.webp" alt="">
+                    </div>
+                    <div class="best-seller-details">
+                        <div class="seller-details">
+                            <div class="product-title">Pantalon de qualité</div>
+                        </div>
+                        <div class="price-review flex gap-10">
+                            <div class="reviews">
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                                <i class="fa-solid fa-star selected"></i>
+                            </div>
+                            <div class="comments">(459)</div>   
+                        </div>
+                        <div class="best-price flex gap-10 jcc">
+                            <del>
+                                $159.90
+                            </del>
+                            <h4>$69.99</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="special-products-container py-50">
+      <div class="container">
+        <div class="special-products flex jcsb wrap">
+          <div class="special-product-list">
+            <h2>Featured Products</h2>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/2.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Chemise noire splendide</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/3.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Chemise de start</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/4.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="special-product-list">
+            <h2>BEST PRODUCTS</h2>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Chemise avec fleur</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Robe d'affaire</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Robe de nuit</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/best-seller/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="special-product-list">
+            <h2>Featured Products</h2>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="special-product-list">
+            <h2>Featured Products</h2>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special-product-item flex">
+              <div class="special-product-image">
+                <img src="/assets/images/product/featured/1.webp" alt="" />
+              </div>
+              <div class="special-product-details">
+                <div class="product-name">
+                  <h5>Pantalon de qualité</h5>
+                </div>
+                <div class="product-reviews">
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star selected"></i>
+                  <i class="fa-solid fa-star"></i> (758)
+                </div>
+                <div class="product-price">
+                  <div class="product-price flex gap-10">
+                    <del>
+                      <h4>$89.99</h4>
+                    </del>
+                    <h4>29.99</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-30">
+      <div class="container">
+        <div class="footer-content flex jcsb wrap pb-30">
+          <div class="footer-list">
+            <h2>Contact Infos</h2>
+            <div class="footer-item">
+              <h4>Adresse :</h4>
+              <p>123 Street Name, City, E,gland</p>
+            </div>
+            <div class="footer-item">
+              <h4>Phone :</h4>
+              <p>(123) 456-7890</p>
+            </div>
+            <div class="footer-item">
+              <h4>Email :</h4>
+              <p>mail@example.com</p>
+            </div>
+            <div class="footer-item">
+              <h4>Working DAYS/Hours :</h4>
+              <p>Mon -sun / 9:60 AM - 8:00 PM</p>
+            </div>
+          </div>
+          <div class="footer-list">
+            <h2>Customer service</h2>
+            <ul>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Carres</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <h2>Popular tags</h2>
+            <div class="footer-tags">
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+              <div class="tags">bags</div>
+            </div>
+          </div>
+          <div class="footer-list">
+            <h2>SUBSCRIBE NEWSLETTER</h2>
+            <div class="footer-subscribe">
+              <p>
+                Get all the latest information on events, sales and offers. Sign
+                up for newsletter:
+              </p>
+              <div class="footer-input">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Adress"
+                />
+              </div>
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom flex jcsb py-30 wrap gap-10">
+          <div class="footer-bottom-left">
+            @ Jstore eCommerce. 2023. All Rightd Reserved
+          </div>
+          <div class="footer-bottom-right flex gap-10">
+            <img src="/assets/images/card/mastercard.svg" alt="" />
+            <img src="/assets/images/card/cb.svg" alt="" />
+            <img src="/assets/images/card/visa.svg" alt="" />
+            <img src="/assets/images/card/oney.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <div class="pages"></div>
+  </body>
+</html>

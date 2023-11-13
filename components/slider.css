@@ -1,0 +1,96 @@
+.slider-image{
+    background-image: url("/assets/images/slider/slide-1.jpg");
+    height: 500px;
+    background-position-x: 71%;
+}
+.slider-content{
+   top: 10px;
+   left: 10%;
+   min-width: 25%;
+   height: 200px;
+   padding: 20px 0;
+   white-space: nowrap;
+}
+/* Cette configuration est importante à prendre en compte
+si tu vrux devenir un bon développeur */
+.slider-content h4{
+    font-size: 1.18rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+    margin: 0;
+    margin-bottom: 0;
+}
+.slider-content h2{
+    font-size: 2.31rem;
+    letter-spacing: 0.005em;
+    opacity: 0.7;
+    font-family: 'Segoe Script','Savoye LET',  Tahoma, Geneva, Verdana, sans-serif
+}
+.slider-content h3{
+    font-size: 5.9em;
+}
+.slider-content .slider-actions span{
+    font-weight: bold;
+}
+.slider-content .slider-actions .price{
+    font-weight: bold;
+    background-color: var(--main-color-teal);
+    color: var(--main-color-white);
+    padding: 10px;
+    font-size: 1.4rem;
+    transform: rotate(-10deg);
+}
+.slider-content .slider-actions .btn{
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    border-radius: 0;
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    transform: rotate(-10deg);
+}
+
+.slider-icon{
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color-teal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color-white);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.slider-icon i{
+    font-size: 1.5rem;
+}
+.slider-icon:hover{
+    background-color: var(--main-color-black);
+}
+.slider-icon.prev{
+    left: 20px;
+}
+.slider-icon.next{
+    right: 20px;
+}
+/* ******************MEDIA****************** */
+/* @media screen and (max-width: 1200px) {
+   
+} */
+@media screen and (max-width: 992px) {
+    .slider-content {
+        display: none;
+        /* position: relative; */
+    }
+}
+/* @media screen and (max-width: 768px) {
+  
+}
+@media screen and (max-width: 576px) {
+    
+@media screen and (max-width: 427px) {
+    
+} */

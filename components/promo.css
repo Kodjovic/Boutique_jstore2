@@ -1,0 +1,48 @@
+.promo-icon {
+    
+
+}
+.promo-icon i{
+    color: var(--main-color-teal);
+    font-size: 2.2rem;
+}
+.promo-item{
+    min-width: 300px;
+}
+.promo-item .promo-details h3 {
+   font-size: 0.9rem; 
+}
+.promo-item .promo-header{
+    height: 100px;
+}
+/* ******************MEDIA****************** */
+/* @media screen and (max-width: 1200px) {
+   
+} */
+/* A reviser pour bien comprendre */
+@media screen and (max-width: 992px) {
+    .promo-item{
+        min-width: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .promo-container{
+        margin: 0 auto;
+    }
+    .promo-container{
+
+    /* Pour centrer l'element dans la marge */
+        margin: 0 auto;
+        flex-direction: column;
+        /* Pour bien contenir l'image */
+        width: 98%;
+    }
+    .promo-item{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    
+@media screen and (max-width: 427px) {
+    
+} */

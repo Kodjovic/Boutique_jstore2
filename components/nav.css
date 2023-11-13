@@ -1,0 +1,161 @@
+nav{
+    /* sticky fonctionne comme fixed sauf que lui rend
+    l'element a une position donné */
+    position: sticky;
+    top: 0;
+    background-color: var(--main-color-white);
+    box-shadow: 2px 8px 12px -8px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.nav-container {
+    text-transform: uppercase;
+    font-weight: 600px;
+    /* background-color: red; */
+}
+.nav-container ul li a{
+    /* Display block par ce que les element a par
+    défaut sont de type inline, donc ompossible d'agir
+    dessus si on ne le change pas en block */
+    display: block;
+    padding: 15px 10px;
+    border-top: 2px solid var(--main-color-white);
+    border-bottom: 2px solid var(--main-color-white);
+    height: 30px;
+    line-height: 30px;
+
+}
+.nav-container ul li a:hover{
+    color: var(--main-color-teal);
+    border-top: 2px solid var(--main-color-teal);
+}
+.nav-container ul li a.active{
+    border-top: 2px solid var(--main-color-teal);
+}
+/* .nav-container ul li a.active{
+    border-top: 2px solid var(--main-color-teal);
+} */
+.nav-container ul li:hover ul{
+    display: block;
+}
+.nav-container ul li:hover .mega-sub-nav{
+    display: flex;
+}
+
+/* *****************SUB NAV***************** */
+.sub-nav{
+    background-color: var(--main-color-white);
+    white-space: nowrap;
+    min-width: 200px;
+}
+.sub-nav li a:hover{
+    background-color: var(--main-color-teal);
+    color: var(--main-color-white) !important;
+}
+
+.nav-container ul li a i{
+    /* ca a permis de bouger le dropdown a gauche 
+    et de retirer du flux normale d'affichage*/
+    float: right;
+    position: relative;
+    top: 8px;
+    font-size: 0.8rem;
+    /* left: 4px; */
+}
+
+/* ******************SOUS MENU DE SOUS MENU**************** */
+.sub-nav .sub-nav{
+    /* permet de positionner le sous menu de sous menu
+    par rapport a son parent */
+    left: 100%;
+    top: 0;
+    display: none !important;
+}
+.sub-nav li:hover .sub-nav{
+    /* Quand il ya hover sur le sub nav, on regarde si
+    il existe il second, dans ce quand on l'affiche */
+    display: block !important;
+}
+
+/* ******************MEGA SUB NAV**************** */
+.mega-sub-nav{
+    background-color: var(--main-color-white);
+    display: none;
+}
+.mega-sub-nav .mega-item{
+    min-width: 200px;
+    padding: 15px 10px;
+    border-right: 0.1px solid var(--main-color-gray);
+}
+.mega-sub-nav .mega-item:nth-child(3){
+    border: none;
+}
+.mega-sub-nav .mega-item > h3{
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 1.0rem;
+    white-space: nowrap;
+}
+.mega-sub-nav .mega-item a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--main-color-gray);
+    border: none;
+    text-transform: uppercase;
+}
+.mega-sub-nav .mega-item a:hover{
+    /* border-top: 2px solid var(--main-color-white); */
+    border: none;
+}
+.mega-sub-nav .mega-item:nth-child(3) img{
+    width: 100%;
+    height: 100%;
+}
+.mega-sub-nav .mega-item .mega-item-content{
+    top: 20px;
+    right: 20px;
+}
+.mega-sub-nav .mega-item button{
+    bottom: 20px;
+    left: 20%;
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+.mega-sub-nav .mega-item .mega-item-content span{
+    font-size: 2rem;
+}
+.mega-sub-nav .mega-item .mega-item-content h4{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.mega-sub-nav .mega-item .mega-item-content h3{
+    font-size: 3rem;
+    color: var(--main-color-teal);
+}
+
+
+/***************** MEDIA *******************/
+@media screen and (max-width: 1200px) {
+   
+}
+@media screen and (max-width: 992px) {
+    .nav-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-left{
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 576px) {
+
+}
+    
+@media screen and (max-width: 427px) {
+    
+} */

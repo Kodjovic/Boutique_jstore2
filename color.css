@@ -1,0 +1,13 @@
+:root{
+    /*  root par ce que on veut que cette
+    couleur soit disponible ur tout le site*/
+    --main-color-teal: teal;
+    --main-color-white:white;
+    --main-color-black: #1d1d1d;
+    --main-color-gray: gray;
+    --main-color-danger: #ff0800;
+    --main-color-success: #2ba968;
+    --main-color-orange: orange;
+    --main-color-footer: #212529;
+
+}
